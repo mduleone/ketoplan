@@ -14,13 +14,12 @@ injectTapEventPlugin();
 const store = initializeStore({});
 
 ReactDOM.render(
-    // @TODO: Update the basename to match your default path, or remove it if you are mounted at `/`
-    <Provider store={store}>
-        <MuiThemeProvider>
-            <Router basename="/crapshoot">
-                <RoutingTable />
-            </Router>
-        </MuiThemeProvider>
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <MuiThemeProvider>
+      <Router>
+        <RoutingTable />
+      </Router>
+    </MuiThemeProvider>
+  </Provider>,
+  document.getElementById('root')
 );

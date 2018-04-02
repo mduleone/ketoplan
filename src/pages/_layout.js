@@ -21,7 +21,7 @@ export default class Layout extends Component {
 
         return (
             <div id="app-container">
-                <AppBar title="Crapshoot Scaffolded App"
+                <AppBar title="KetoPlan AI"
                         onLeftIconButtonClick={this.toggleMenu} />
                 <Drawer className="nav-bar"
                         docked={false}
@@ -31,9 +31,9 @@ export default class Layout extends Component {
                     <Link to="/" onClick={this.closeMenu}>
                         <MenuItem>Home</MenuItem>
                     </Link>
-                    <Link to="/todo" onClick={this.closeMenu}>
-                        <MenuItem>Todos</MenuItem>
-                    </Link>
+                    {/*<Link to="/todo" onClick={this.closeMenu}>*/}
+                        {/*<MenuItem>Todos</MenuItem>*/}
+                    {/*</Link>*/}
                 </Drawer>
                 <div id="app-content">
                     <div className={className}>
